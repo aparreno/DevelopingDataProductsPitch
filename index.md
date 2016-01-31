@@ -24,22 +24,37 @@ The dataset has been obtained from [link](http://ec.europa.eu/eurostat/web/lfs/d
 
 ## Education and gender
 
+
+
 The education has been divided in the following levels
-- Less than primary, primary and lower secondary education
-- Upper secondary and post-secondary non-tertiary education
-- Tertiary education
-- All levels
-- No response
+
+
+```r
+levels(data$ISCED11)
+```
+
+```
+## [1] "All ISCED 2011 levels "                                                    
+## [2] "Less than primary, primary and lower secondary education (levels 0-2)"     
+## [3] "No response"                                                               
+## [4] "Tertiary education (levels 5-8)"                                           
+## [5] "Upper secondary and post-secondary non-tertiary education (levels 3 and 4)"
+```
 
 While gender is divided in:
-- Male
-- Female
-- Total (Both male and female)
+
+
+```r
+levels(data$SEX)
+```
+
+```
+## [1] "Females" "Males"   "Total"
+```
 
 ---
 
 ## What can you do?
-
 
 - You can compare the unemployment rates in the european countries by ploting the rates from 2003 to 2014.
 There are unemployment data of 39 countries and agrupation of countries.

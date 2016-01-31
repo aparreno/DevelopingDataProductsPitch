@@ -64,21 +64,23 @@ The indicator focuses on the 15 to 74 years old.</p>
   <article data-timings="">
     <p>The education has been divided in the following levels</p>
 
-<ul>
-<li>Less than primary, primary and lower secondary education</li>
-<li>Upper secondary and post-secondary non-tertiary education</li>
-<li>Tertiary education</li>
-<li>All levels</li>
-<li>No response</li>
-</ul>
+<pre><code class="r">levels(data$ISCED11)
+</code></pre>
+
+<pre><code>## [1] &quot;All ISCED 2011 levels &quot;                                                    
+## [2] &quot;Less than primary, primary and lower secondary education (levels 0-2)&quot;     
+## [3] &quot;No response&quot;                                                               
+## [4] &quot;Tertiary education (levels 5-8)&quot;                                           
+## [5] &quot;Upper secondary and post-secondary non-tertiary education (levels 3 and 4)&quot;
+</code></pre>
 
 <p>While gender is divided in:</p>
 
-<ul>
-<li>Male</li>
-<li>Female</li>
-<li>Total (Both male and female)</li>
-</ul>
+<pre><code class="r">levels(data$SEX)
+</code></pre>
+
+<pre><code>## [1] &quot;Females&quot; &quot;Males&quot;   &quot;Total&quot;
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->

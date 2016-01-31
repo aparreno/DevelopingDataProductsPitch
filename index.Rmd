@@ -24,30 +24,30 @@ The dataset has been obtained from [link](http://ec.europa.eu/eurostat/web/lfs/d
 
 ## Education and gender
 
+```{r , comment = NA, message = F, echo = F}
+library(dplyr)
+library(data.table)
+data <- read.csv("lfsa_urgaed_1_Data.csv")
+data <- data[, -c(4,6,8)]
+data$Value <- as.numeric(gsub("[^0-9|.]","",as.character(data$Value)))
+```
+
 The education has been divided in the following levels
-- Less than primary, primary and lower secondary education
-- Upper secondary and post-secondary non-tertiary education
-- Tertiary education
-- All levels
-- No response
+
+```{r}
+levels(data$ISCED11)
+```
 
 While gender is divided in:
-- Male
-- Female
-- Total (Both male and female)
+
+```{r}
+levels(data$SEX)
+```
 
 ---
 
 ## What can you do?
 
-```{r echo=FALSE}
-library(dplyr)
-library(data.table)
-
-data <- read.csv("../lfsa_urgaed_1_Data.csv")
-data <- data[, -c(4,6,8)]
-data$Value <- as.numeric(gsub("[^0-9|.]","",as.character(data$Value)))
-```
 - You can compare the unemployment rates in the european countries by ploting the rates from 2003 to 2014.
 There are unemployment data of `r length(levels(data$GEO))` countries and agrupation of countries.
 - You can filter data by sex.
