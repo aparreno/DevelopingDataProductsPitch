@@ -38,7 +38,7 @@ The education has been divided in the following levels
 levels(data$ISCED11)
 ```
 
-While gender is divided in:
+While gender is divided in the following levels:
 
 ```{r}
 levels(data$SEX)

@@ -41,7 +41,7 @@ levels(data$ISCED11)
 ## [5] "Upper secondary and post-secondary non-tertiary education (levels 3 and 4)"
 ```
 
-While gender is divided in:
+While gender is divided in the following levels:
 
 
 ```r
